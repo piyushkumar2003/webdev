@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <style>
+        .navbar{
+            background-color: black;
+            color:  white;
+            border-radius:20px ; 
+        }
+        .navbar ul{
+            overflow: auto; /*this will bring back the bg */
+        }
+        .navbar li{
+            float: left;
+            list-style: none;/* to remove the bullet points */
+            padding: 5px;
+            /* background-color: black;  */
+            
+        }
+        .navbar li a{
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+        color: red;
+        }
+        .search{
+            float: right;
+            padding: 5px 15px;
+        }
+        .search input{
+            border-radius: 15px;
+            border: 2px solid black;
+            width: 150px
+        }
+
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://google.com" target="_blank">home</a></li>
+                <li><a href="https://youtube.com" target="_blank">content</a></li>
+                <li><a href="https://twitter.com" target="_blank">about us</a></li>
+                <li><a href="https:/linkedin.com" target="_blank">contact us</a></li>
+                <div class="search"><input type="text" id="search" placeholder="Search here"></div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

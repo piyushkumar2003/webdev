@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function tutorial
+    </div>
+    <script>
+        // conventional method
+        
+        // function greet(){
+        //     console.log("good morning");
+        // }
+        // greet();
+
+        // shortcut method
+        // let greet = () =>{
+            // console.log("hello my friend");
+        // }
+        // greet();
+        
+        // another shortcut
+        let greet = () => console.log("hello my friend");
+        greet();
+
+        // ANOTHER WAY
+        // let sum = (a,b) => {
+        //     return a+b;
+        // }
+
+        let sum1 = (a,b) => a+b;
+        let sum3 =sum1(18,48);
+        // console.log(sum3);
+        
+
+        let obj = {
+            greetings: "good morning",
+            names: ["mosh","jerry","sarah"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greetings + "hello " + student);
+                    // this in line 46 will point to obj only when we are using arrow function. if we use function literal then 'this' will point to speak.
+
+                    // kisi bhi obj ke andr koi function banaye using arrow, toh usmien 'this' will point to obj or u can say parent. lekin agar arrow function use nhi kiya toh this will point to that function
+                });
+            }
+        }
+    </script>
+</body>
+</html>

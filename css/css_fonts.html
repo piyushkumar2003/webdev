@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in css</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet"> 
+    <style>
+        #imported{
+            font-family: 'Mouse Memoirs', sans-serif;
+        }
+        p{
+            
+            
+            /* this will make font cursive */
+            /* font-family: cursive; */
+
+
+            /* this is font stack it will give franklin gothic font if this is not present then it will trry for next font which is medium, if medium is also not present then it will try for next font present is stack */
+            
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+
+            /* font size */
+            font-size: 33px;  /* pixcel is 1/96th of an inch */
+            line-height: 2.5em;
+            font-weight: lighter;
+            
+        }
+        /* this is how we bold text */
+        span{
+            font-weight: bold;            
+        }
+    </style>
+</head>
+<body>
+    <h4>Fonts in css</h4>
+    <p>Lets play <span>with</span> fonts</p>
+
+    <p id="imported">if we wnat to import a font from google fonts. then we first have to first copy the stylesheet from website and paste it head. then give name of the font to font family.</p>
+</body>
+</html>

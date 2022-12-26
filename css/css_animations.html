@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            /* display: flex; */
+            background-color:brown;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border: 3px solid palegreen;
+            background-color: pink;
+            color: black;
+            position: relative;
+            animation-name: movingBox ;
+            animation-name: anotherBox ;
+            animation-duration: 4s;
+            animation-iteration-count: 4;/*can also give value 'infinite' */
+            animation-delay: 1s;
+
+            /* animation-fill-mode: alternate; */
+            /* animation-fill-mode: forwards; */
+
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: ease;
+
+            animation-direction: normal;
+            /* animation-direction: reverse; */
+            /* animation-direction:alternate; */
+            /* animation-direction: alternate-reverse; */
+
+
+
+            /* ANIMATION SHOTHAND */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes anotherBox {
+            0%{
+                top: 0px;
+                left: 0px;
+                border-radius: 0px;
+            }
+            25%{
+                top: 550px;
+                left: 0px;
+                border-radius: 150px;
+            }
+            50%{
+                top: 550px;
+                left: 550px;
+                border-radius: 0px;
+            }
+            75%{
+                top: 0px;
+                left: 550px;
+                border-radius: 150px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                border-radius: 0px;
+            
+            }
+        }
+        @keyframes movingBox{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>

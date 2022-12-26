@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries for responsiveness</title>
+    <style>
+        .box{
+            background-color: red;
+            display: none;
+            text-align: center;
+            font-size: 30px;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+            }
+        }
+        @media (min-width:300px) and (max-width:500px){
+            #box-2{
+                color: black;
+                background-color: aqua;
+                display: block;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            #box-3{
+                color: black;
+                background-color:beige;
+                display: block;
+            }
+        }
+        @media (min-width:800px){
+            #box-4{
+                color: black;
+                background-color:bisque;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">this is for mobile</div>
+    <div class="box" id="box-2">this is for tablet</div>
+    <div class="box" id="box-3">this is for desktop</div>
+    <div class="box" id="box-4">this is for wide screen computers</div>
+</body>
+</html>

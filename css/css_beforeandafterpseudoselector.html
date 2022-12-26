@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            /* this background picture is covering full background if we put it in "body" i.e this tag but if some picture doesnt do so then we can add content="" then make position='absolute' and make top=0px and other required changes and put them in header::before tag example given below */
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1660254149750-f31f1c59a86b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /*this will make bgimg least priority so that it all other content is visible over it*/
+            opacity: 1;/*opacity of img will be less so that content is more visible*/
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .section{
+            height: 300px;
+            text-align: center;
+            /* border: 2px solid yellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 100px;
+        }
+        .navigation{
+            display:flex;
+            list-style: none;
+        }
+        li{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Servies</li>
+                <li class="item">Socials</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section">
+        <h3>This is content</h3>
+        <p class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, ipsa assumenda, omnis impedit architecto nesciunt sequi, aut ab dolores vitae a voluptates fuga. Officiis vitae fuga voluptate optio quae doloribus. Quas aspernatur voluptas reprehenderit maxime temporibus in repellendus facere, rem nihil atque expedita quia impedit debitis doloribus laudantium accusamus itaque!</p>
+    </div>
+</body>
+</html>

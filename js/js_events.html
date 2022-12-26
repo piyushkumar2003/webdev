@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <style>
+#btn{
+    padding: 12px;
+    color: black;
+    background-color: red;    
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <!-- types of events -->
+    <!-- click event 
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    for forms:
+    submit
+    focus
+
+    DOMcontentLoaded
+    transitionend -->
+
+
+    <div class="container">
+        <h2>this heading</h2>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis suscipit veritatis asperiores dolor totam repellendus, nisi ratione corrupti quis neque. Laborum veritatis a earum consectetur distinctio, similique expedita delectus, nostrum aut dolore ea obcaecati? Inventore doloribus ex consectetur? Debitis esse accusamus deserunt fuga magni sequi blanditiis iste veniam repellat expedita, magnam ad sit illum dolore at voluptatem neque, ratione vel distinctio assumenda! Earum fuga quae, nobis dolor eaque voluptas explicabo labore nihil enim necessitatibus autem veritatis culpa hic? Voluptatem voluptatibus nam quasi, laborum ipsa molestiae? Iure, aliquam. Laboriosam doloribus unde adipisci officiis magnam nulla. Ducimus, eveniet! Assumenda itaque, inventore quisquam vero totam quae harum possimus amet? Enim incidunt distinctio nesciunt dolores omnis facere possimus. Libero, maxime soluta quaerat veritatis facilis qui accusantium placeat nam reiciendis impedit debitis delectus distinctio itaque earum dolorem a repudiandae saepe quibusdam rem cum rerum labore dicta. Quibusdam eum corporis nam ipsum nulla itaque. Dolorum unde nulla illum sint eveniet totam explicabo quaerat pariatur inventore. Rerum neque excepturi delectus explicabo repudiandae totam, dolorem exercitationem assumenda culpa dicta nobis voluptate porro consequuntur deleniti, quia est dolore consectetur? Tempora nisi modi ab, cumque possimus quam consequuntur temporibus ad neque quo quidem molestiae, soluta necessitatibus, facere id corporis eligendi!</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+function togglehide(){
+    let btn = document.getElementById('btn');
+    let para = document.getElementById('para');
+    if (para.style.display != 'none') {
+        para.style.display = 'none';
+    }else{
+        para.style.display = 'block';
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- this will make red all p tags present in markup -->
+    <!-- <style>
+        p{
+            color: red;
+        }
+    </style> -->
+
+    <!-- to make a particular p tag red use id attribute and make a unique id for that. we use # for targeting id and . for targeting class. -->
+    <style>
+        /* id selector */
+        #firstpara{
+            color: red;
+        }
+        /* class selector */
+        .bgBlue{
+            color: aqua;
+            background-color: burlywood;
+        }
+        /* grouping selector  */
+        span,footer{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara" class="bgBlue ">this is a simple paragrhaph to demostrate css selectors using internal css </p>
+    <p id="redElement" class="bgBlue redElement">this is a simple paragrhaph to demostrate css selectors using internal css </p>
+
+    <div>
+        <p>this is a simple paragrhaph to demostrate css selectors using internal css </p>
+        <span>this is a simple paragrhaph to demostrate css selectors using internal css</span>
+    </div>
+    <footer>this is footer</footer>
+</body>
+</html>

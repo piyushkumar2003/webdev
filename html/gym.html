@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness website</title>
+    <style>
+        body{
+            color: white;
+        }
+        .leftnavbar {
+            /* background-color: rgb(11, 10, 10); */
+            display: inline-block;
+            padding: 10px
+        }
+        .leftnavbar:hover{
+            color: rgb(233, 96, 96);
+        }
+        body {
+            /* background: url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80'); */
+            background: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80');
+            background-size: 1366px 650px;
+        }
+        #left {
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 15px;
+        }
+        #right {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 19px;
+            right: 15px;
+            /*     float: right; */
+        }
+        .leftnavbar:hover{
+            color: rgb(233, 96, 96);
+        }
+        .rightnavbar:hover{
+            color: rgb(233, 96, 96);
+        }
+        #centre {
+            /* border: 2px solid red; */
+            position: absolute;
+            display: block;
+            top:0%;
+            width: 550px;
+            margin: auto;
+            left: 450px;
+        }
+        .navbar{
+            display: inline-block;
+            list-style: none;
+            margin: 10px
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 5px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover,.navbar li a:active{
+            color: rgb(233, 96, 96);
+        }
+        .container{
+            /* border: 2px solid orange; */
+            width: 515px;
+            height: 250px;
+            top: 92px;
+            position: absolute;
+            margin: 58px;
+            color: rgb(233, 96, 96);
+            background-color: black;
+            border-radius: 25px;
+        }
+        .registration{
+            display: inline-block;
+            width: 380px;
+            margin: auto;
+            padding: 5px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header >
+        <div id="left" class="leftnavbar">
+            ANYTIME FITNESS
+        </div>
+        <div id="centre" class="navbar">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Socials</a></li>
+            </ul>
+        </div>
+        <div id="right" class="rightnavbar">
+            Login/Sign up
+        </div>
+    </header>
+    <div class="container">
+        <div class="registration">
+            <h1>Registration Form</h1>
+            <form action="noaction.php"></form>
+            <input type="text" name="myName" placeholder="Name">
+            <br></br>
+            <input type="text" name="myphone" placeholder="Phone">
+            <br></br>
+            <input type="email" name="myEmail"placeholder="E-mail" >
+            <br></br>
+            Male<input type="radio" name="myGender"> Female <input type="radio" name="myGender" >
+            <input type="submit" value="Submit Now">
+        </div>
+    </div>
+</body>
+
+</html>

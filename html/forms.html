@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms </title>
+</head>
+<body>
+    <h2>forms in html</h2>
+    <!-- 'form action' tag will store all inputs from this page to a backend file named as backend.php -->
+    <form action="backend.php"></form>
+    <!-- div is a block element so it will take a line and put all other things in next line whereas input type is inline elements-->
+    <label for="name">Name: </label>
+    <!-- when we will click on 'Name: ' on page it will automatically select the feild where we can write -->
+    <!-- for attribute and id attribute should contain same thing -->
+    <div>
+        <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <div>
+        Role: <input type="text" name="myRole">
+    </div>   
+    <br>
+    <div>
+        Gender: Male<input type="radio" name="myGender"> feMale<input type="radio" name="myGender"> Other<input type="radio" name="myGender">
+    </div> 
+    <br>
+    <div>
+        DOB: <input type="date" name="myDOB">
+    </div>
+    <br>
+    <label for="employed">Are you employed? </label>
+    <div>
+        <input type="checkbox" name="myEmployment" id="employed">
+    </div>
+    <br>
+    <div>
+        Salary: <input type="number" name="mySalary" >
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myEmail" >
+    </div>
+    <br>
+    <div>
+        <label for="shift_timings">Office Timings:</label>
+        <select name="mytimings" id="shift_timings">
+            <option value="Morning">Morning</option>
+            <option value="Noon">Noon</option>
+            <option value="Evening" selected>Evening</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        Description of job you want: <br><textarea name="mytext" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</body>
+</html>

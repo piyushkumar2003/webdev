@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            /* initialization of flexbox */
+            display: flex;
+            height: 500px;
+
+            /* properties of flexbox for container */
+
+            flex-direction: row; /*row is default*/
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* this will make website resposnsive. content will start wraping when size of screen is decreased   */
+            flex-wrap: wrap; 
+            /*default value of flex-wrap is nowrap*/
+
+            /* flex-wrap: wrap-reverse; */
+            /*this will do wraping in reverseing direction*/
+            /* flex-flow is a short-hand for giving flex-direction and flex-wrap */
+            /* flex-flow: row wrap ; */
+
+            /* this will bring content in center(horizontally ) of flex box;  */
+            justify-content:center ;
+            /* justify-content:space-between; */
+            /* justify-content:space-around; */
+            /* justify-content:space-evenly; */
+
+            /* this will make all content in center(vertically) of content  */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+            /*strech will make equal spacing btw boxes when their height is small*/
+
+        }
+        .item{
+            border: 2px solid black;
+            padding: 5px;
+            margin: 15px;
+            height: 100px;
+            width: 100px;
+        }
+        #box-1{
+            /* flex properties for flex items */
+            order: 2; /*higher the order later it will appear*/
+            /* flex-shrink: 8;  */
+            /*(responsiveness)this will make box2 shrink 8 timesfaster when size of screen is increases */
+        }
+        #box-2{
+            order: 80; /*higher the order later it will appear*/
+            /* flex-grow: 3;   */
+            /*(responsiveness)this will make box2 grow 3 timesfaster when size of screen is increases */
+        }
+        #box-3{
+            flex-basis: 220px;
+            /* when flex-direction is row then flex basis will control width;
+            when flex-direction is column then flex basis will control height; */
+
+            /* flex: 2 2 350px; */
+            /* flex short-hand is 'flex: flex-grow flex-shrink flex-basis'  */
+
+            /* align-self: center;
+            align-self: flex-end;
+            align-self: flex-start; */
+            /* this will put box3 in centr of container */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="box-1">BOX-1</div>
+        <div class="item" id="box-2">BOX-2</div>
+        <div class="item" id="box-3">BOX-3</div>
+        <div class="item" id="box-4">BOX-4</div>
+        <div class="item" id="box-5">BOX-5</div>
+        <div class="item" id="box-6">BOX-6</div>
+    </div>
+</body>
+</html>

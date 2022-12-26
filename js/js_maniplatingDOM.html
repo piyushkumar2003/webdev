@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maniplating DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li id="home">Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is another container
+    </div>
+
+
+    <script>
+
+        // TARGETING HTML CONTENT BY ID NAME
+        
+        // let main = document.getElementById('main');
+        // console.log(main);
+
+        // this will print html code under that ID as a string
+        // console.log(main.innerHTML);
+        
+        // we can change the content of any id.   
+        // main.innerHTML = "<li>Services</li>"
+        // console.log(main.innerHTML);
+        
+
+        // TARGETING HTML CONTENT BY CLASS NAME
+        
+        // let containerS = document.getElementsByClassName('container');
+        // console.log(containerS);
+        
+        
+        // TARGETING HTML CONTENT BY CSS SELECTORS NAME
+        
+        let sel = document.querySelector('#nav');
+        console.log(sel);
+
+        </script>
+</body>
+</html>

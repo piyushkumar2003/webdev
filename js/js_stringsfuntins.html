@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtions in string</title>
+    <style>
+        /* add css */
+    </style>
+</head>
+<body>
+    
+    <script>
+        var str = 'This is a string';
+        // console.log(str);
+        
+        // this will return the first occurence of word form a str
+        var pos = str.indexOf('is');
+        // console.log(pos);
+        
+        // this will return the last occurence of word from a str
+        pos = str.lastIndexOf('is');
+        // console.log(pos);
+        
+        // substr form a str
+        // slice will take starting index and ending index. here it will print from index 1 to 5 of string
+        var substring1 = str.slice(1,6);
+        // console.log(substring1);
+
+        // this substring cannot take negative values whereas slice can do so
+        substring1 = str.substring(1,7);
+        // console.log(substring1);
+        
+        
+        // this function takes strating index as first parameter and length of str upto which str should be printed as second parameter 
+        substring1 = str.substr(1,8);
+        // console.log(substring1);
+
+        // replace a portion of string with some other sting
+        var replaced = str.replace('string', 'piyush');
+        // console.log(str);
+        // console.log(replaced);
+        
+        // console.log(str.toLowerCase());
+        // console.log(str.toUpperCase());
+
+        var newstr = str.concat(". this is a new concatinated string");
+        // console.log(newstr);
+
+        var strwithWhitespaces = '    this contains   whitespaces      okay'
+        // console.log(strwithWhitespaces);
+        // console.log(strwithWhitespaces.trim());
+
+        var char3 = str.charAt(3);
+        // console.log(char3);
+        
+        var char3 = str.charCodeAt(3);
+        // this function gives utf code of that letter
+        // console.log(char3);
+        </script>
+</body>
+</html>

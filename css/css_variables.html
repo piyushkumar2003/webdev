@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in css</title>
+    <style>
+        /* this is how you declare variables in global scope */
+        :root{
+            --picture-color: blue;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            --danger-color: blue;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* border: 12px solid green; */
+            border: 12px solid var(--danger-color);
+            margin: 5px;
+            align-items:  center;
+            font-size: 55px;
+            color: var(--picture-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+</body>
+</html>

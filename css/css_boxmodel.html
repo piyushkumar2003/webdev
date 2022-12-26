@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            /* this is universal selector it will make changes in all tags */
+            font-style: italic;
+        }
+        .container{
+            background-color: rgb(15, 160, 170);
+            border: 2px solid salmon;
+            /* margin-left/right/top/botttom also available */
+            /* margin in all direction short-hand */
+            /* margin: top right bottom left */
+            margin: 10px;
+
+            /* this will make width of box fixed when padding is done/changed */
+            box-sizing: border-box;
+
+            
+        }
+        #first{
+            /* padding in all direction short-hand */
+            /* padding: top right bottom left */
+            padding: 0px;
+        }
+        #second{
+            /* padding: 30px; */
+            
+            /* if we want to give same padding in top/bottom and left and right then we can use this syntax */
+            /* padding: y(top/bottom) x(right/left); */
+            padding: 15px 40px;
+        }
+        #third{
+            padding-left: 15px;
+            /* paddding-right/top/botttom also available */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quam delectus veritatis minima. Neque magnam corporis beatae sit laboriosam necessitatibus ab consequuntur voluptatem iusto aut doloribus, ut distinctio tempore magni impedit fugiat provident quidem quae asperiores, a aliquam! Nobis quaerat beatae sunt ipsa similique modi at, dignissimos tempore delectus quasi!</p>
+
+    </div>
+    <div class="container">
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quam delectus veritatis minima. Neque magnam corporis beatae sit laboriosam necessitatibus ab consequuntur voluptatem iusto aut doloribus, ut distinctio tempore magni impedit fugiat provident quidem quae asperiores, a aliquam! Nobis quaerat beatae sunt ipsa similique modi at, dignissimos tempore delectus quasi!</p>
+    </div>
+    <div class="container">
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quam delectus veritatis minima. Neque magnam corporis beatae sit laboriosam necessitatibus ab consequuntur voluptatem iusto aut doloribus, ut distinctio tempore magni impedit fugiat provident quidem quae asperiores, a aliquam! Nobis quaerat beatae sunt ipsa similique modi at, dignissimos tempore delectus quasi!</p>
+    </div>
+</body>
+</html>

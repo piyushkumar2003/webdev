@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setTimeOut and clearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        this is a container.
+    </div>
+    <span id="time"></span>
+    <script>
+        console.log("hello")
+
+        // setTimeOut -->Allows us to run the function once after the interval of time.
+        function  greet(){
+            console.log("hello good morning!!");
+        }
+        // setTimeout( name of function, time in milliseconds,arguments to the function);
+        // setTimeout(greet , 5000);
+        
+        
+        // WITH SOME ARGUMEMTS
+        
+        // function  greet(byetext ,myname){
+        //     console.log("hello good morning!! "+myname +" "+byetext);
+        // }
+        // setTimeout(greet , 5000,"okay bye", "piyush");
+        
+
+        // to cancel the scheduled setTimeout cmd we use clearTimeout() function
+        
+        // function  greet(byetext ,myname){
+        //     console.log("hello good morning!! "+myname +" "+byetext);
+        // }
+        // timeout = setTimeout(greet , 5000,"okay bye", "piyush");
+        // clearTimeout(timeout);
+
+        /* 'timeout' variable will store timeout id which will be taken up by cleartimeout function to cancle the scheduled function call*/
+
+        
+
+        //SET INTERVAL CALL
+        // setInterval(greet , 1000)
+        
+        // CLEAR INTERVAL  CALL
+        // intervalid = setInterval(greet , 1000)
+        // clearInterval(intervalid);
+
+        
+
+        //sample function
+        function Displaytime(){
+            let time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(Displaytime, 1000);
+    </script>
+</body>
+</html>

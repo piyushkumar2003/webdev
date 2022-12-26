@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons</title>
+    <style>
+        .cont1{
+            border: 3px solid blue;
+            background-color: gray;
+            margin: auto;
+            padding: 15px;
+            width: 600px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            /* to remove line in link */
+        }
+        a:hover{
+            color: green;
+            /* this will change the color of link when we will hover cursor over the link */
+            background-color: beige;
+            /* this will channge the bgcolor of link while hovering */
+        }
+        a:visited{
+            background-color: rgb(255, 0, 0);
+            /* this will change color of vossted links */
+        }
+        .btn:hover{
+            background-color: yellowgreen;
+            /* this will change color of btn class when cursor hover over the links/buttons */
+        }
+        .btn{
+            font-weight: bold;
+            font-family: cursive;
+            background-color: aquamarine;
+            border: none;
+            cursor: pointer;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-size: 25px;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus alias quidem modi repudiandae ducimus libero? Eligendi et nam odit, ab quisquam dicta ipsam alias nisi quod sit, iste deleniti eum consequatur quas! Qui, ipsa similique quidem quo eligendi, facilis voluptatem ipsam laboriosam nostrum ea ratione delectus reiciendis quia.</p>
+        <a href="https://www.yahoo.com/" blank="_" class="btn">contact us</a>
+        <button class="btn">read more</button>
+    </div>
+</body>
+</html>

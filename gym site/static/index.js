@@ -1,0 +1,1 @@
+console.log("we are learing how to use static files");
